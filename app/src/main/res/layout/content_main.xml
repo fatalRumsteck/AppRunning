@@ -14,8 +14,47 @@
     tools:showIn="@layout/activity_main"
     tools:context="com.example.antoine.apprunning.MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/btStart"
+        android:text="Start"
+        android:layout_width="300px"
+        android:layout_height="300px" />
+    <Button
+        android:id="@+id/btStop"
+        android:text="Stop"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/btStart"/>
+    <Button
+        android:id="@+id/btSend"
+        android:text="Send"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/btStart"
+        android:layout_toRightOf="@id/btStop"
+        android:layout_toEndOf="@id/btStop"/>
+    <ListView
+        android:id="@+id/lvTrajets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ANDROID PUE LA MERDE " />
+        android:layout_below="@id/btStop"/>
+    <TextView
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="100px"
+        android:layout_toEndOf="@+id/btStart"
+        android:layout_toRightOf="@+id/btStart"
+        android:id="@+id/texts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
+    <TextView
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="200px"
+        android:layout_toEndOf="@+id/btStart"
+        android:layout_toRightOf="@+id/btStart"
+        android:id="@+id/cpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
 </RelativeLayout>
